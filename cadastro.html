@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="cadastro.css">
+        <title>Cadastro</title>
+    </head>
+
+    <body>  
+
+        <div>
+            <h1 id="titulo">Cadastro</h1>
+            <p id="subtitulo">Complete suas informações</p>
+            <br>
+        </div>
+
+        <form>
+
+            <fieldset class="grupo">
+                
+                <div class="campo">
+                    <label for="nome"><strong>Nome Completo</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="campo">
+                    <label for="endereco"><strong>Endereço</strong></label>
+                    <input type="text" name="endereco" id="endereco" required>
+                </div>
+            </fieldset> 
+
+            <div class="idade">
+                <label for="idade"><strong>Idade</strong></label>
+                <input type="idade" name="idade" id="idade" required>
+            </div>
+
+            <div class="salario">
+                <label for="salario"><strong>Salário</strong></label>
+                <input type="salario" name="salario" id="salario" required>
+            </div>
+
+
+            <div class="campo">
+                <label><strong>Você é casado?</strong></label>
+                <label>
+                    <input type="radio" name="casado"  checked>Sim
+                </label>
+                <label>
+                    <input type="radio" name="casado" >Não
+                </label>
+            </div> 
+
+            <div class="campo">
+                <label><strong>Quantos filhos?</strong></label>
+                <label>
+                    <input type="radio" name="filhos" checked>1
+                </label>
+                <label>
+                    <input type="radio" name="filhos" >2
+                </label>
+                <label>
+                    <input type="radio" name="filhos" >3 ou mais
+                </label>
+            </div>
+
+            <div class="campo">
+                <label><strong>Possui plano de saúde?</strong></label>
+                <label>
+                    <input type="radio" name="plano"  checked>Sim
+                </label>
+                <label>
+                    <input type="radio" name="plano" >Não
+                </label>
+            </div> 
+
+            <div class="campo">
+                <label for="nome"><strong>Qual o nome do plano? (Se houver)</strong></label>
+                <input type="text" name="nome" id="nomeplano" >
+            </div>
+
+
+
+
+            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+        </form>
+
+    </body>
+
+</html>
